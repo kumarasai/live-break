@@ -1,0 +1,17 @@
+/* src/styles/SearchBar.css */
+.search-bar {
+    margin: 20px 0;
+    
+}
+
+.search-bar input {
+    width: 97%;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    
+}
+
+.search-bar :focus{
+    border: 1px solid #8e75fa;
+}

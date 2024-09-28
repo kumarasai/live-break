@@ -1,0 +1,21 @@
+/* src/styles/CategoryFilter.css */
+.category-filter {
+    margin: 20px 0;
+    
+}
+
+.category-filter button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* background-color: #007bff; */
+    color: rgb(29, 29, 29);
+}
+
+.category-filter button:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: underline;
+}

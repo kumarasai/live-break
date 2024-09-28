@@ -1,0 +1,102 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box; /* Ensure padding is included within width */
+    overflow: hidden; /* Prevents any overflow */
+}
+
+/* Logo Styling */
+.logo-container {
+    max-width: 200px;
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    left: -250px; /* Initially hidden */
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.sidebar.open {
+    left: 0; /* Sidebar slides in */
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-links li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.sidebar-links li a:hover {
+    background-color: #444;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001; /* Ensure button is above sidebar */
+    position: relative; /* Changed from absolute to avoid overflow issues */
+    margin-left: auto; /* Pushes button to the right side of header */
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo-container {
+        max-width: 150px;
+    }
+
+    .menu-toggle {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        max-width: 120px;
+    }
+
+    .menu-toggle {
+        font-size: 24px;
+    }
+
+    .sidebar {
+        width: 200px; /* Adjust width on smaller screens */
+    }
+}

@@ -1,0 +1,44 @@
+/* src/styles/NewsList.css */
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.news-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.news-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.news-card p {
+    color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .news-card {
+        width: 90%; /* Full width on mobile */
+    }
+
+    .category-filter button {
+        font-size: 12px; /* Smaller buttons on mobile */
+    }
+}
+.header{
+    background-color: #0ea5e9;
+}

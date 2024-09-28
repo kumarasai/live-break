@@ -1,0 +1,69 @@
+/* Container for the advertisement */
+.advertisement-container {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    margin: 10px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* For positioning the close button */
+}
+
+/* Advertisement header */
+.advertisement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* Heading for the ad section */
+.advertisement-container h3 {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+/* Close button styling */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s;
+}
+
+/* Close button hover effect */
+.close-btn:hover {
+    color: #333;
+}
+
+/* Ad image styling */
+.advertisement-image {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* Hover effect for ad image */
+.advertisement-image:hover {
+    transform: scale(1.05);
+}
+
+/* Media queries to adjust the ad for smaller screens */
+@media (max-width: 768px) {
+    .advertisement-container {
+        margin: 5px 0;
+    }
+
+    .advertisement-image {
+        max-width: 100%;
+    }
+
+    .advertisement-container h3 {
+        font-size: 12px;
+    }
+}
